@@ -1,0 +1,23 @@
+{
+  "name": "basex",
+  "version": "0.0.1",
+  "description": "BaseX - new definition of value - triple bottom line - people planet profit - beyond GDP.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basexhq/esgtbl-smart-contract.git"
+  },
+  "author": "Mars Robertson",
+  "license": "MIT, public domain, creative commons",
+  "bugs": {
+    "url": "https://github.com/basexhq/esgtbl-smart-contract/issues"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.1",
+    "@openzeppelin/truffle-upgrades": "^1.19.0",
+    "@truffle/hdwallet-provider": "^2.0.9",
+    "truffle-plugin-verify": "^0.5.26"
+  }
+}
