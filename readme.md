@@ -1,7 +1,5 @@
 # BaseX smart contract
 
-Name of the repo: ESG TBL (environment social governance triple bottom line)
-
 ### Running the code
 * uses Truffle and Remix IDE
 * `git clone ...`
