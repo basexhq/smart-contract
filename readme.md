@@ -78,6 +78,6 @@ UPGRADE CHECKLIST:
 7. Update the readme below with latest implementation address
 
 ### Deployed addresses
-Implementation (ABI from here): https://goerli.etherscan.io/address/0x670a62Df56AF21ef05B85BbCdf3516ea77d4e2A8
-Proxy admin: https://goerli.etherscan.io/address/0x91d1562b186de782E83d8A54d6CED6331B1E7EC3
-BaseX proxy (always call this one): https://goerli.etherscan.io/address/0xE9A042d7Faf38C2C1419AfF1b4b9aBccC3dD1eF7
+Implementation (ABI from here): https://goerli.etherscan.io/address/0x1e692c21dcEE83972B0EC19Fdb791B76c6981FEF
+Proxy admin: https://goerli.etherscan.io/address/0xC8e76E0Ca481E356eBC3492CE0F68f246fb68C92
+BaseX proxy (always call this one): https://goerli.etherscan.io/address/0x1cD6da50afE19Dd978D96d5B0f816EA38130aafA

@@ -1,0 +1,206 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xC8e76E0Ca481E356eBC3492CE0F68f246fb68C92",
+    "txHash": "0x9e921324da7be71251c3672b6cc6041db048daeac9002933642252e13a335da8"
+  },
+  "proxies": [
+    {
+      "address": "0x1cD6da50afE19Dd978D96d5B0f816EA38130aafA",
+      "txHash": "0xbc5f4d27af8c3863e9b497f37c1bf884d807ed27c93a7859b7145995b047cf4d",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "932e0cebb9e5b49ebdabf7a4d1a600afce3ef01aabe529b4a83732572a37f7ed": {
+      "address": "0x1e692c21dcEE83972B0EC19Fdb791B76c6981FEF",
+      "txHash": "0x6f26c74a758992d2fe03f789aacd4b9f1a40ce30ece9e9e4d932486767618fad",
+      "layout": {
+        "solcVersion": "0.8.21",
+        "storage": [
+          {
+            "contract": "BaseX",
+            "label": "admin",
+            "type": "t_address",
+            "src": "../project:/contracts/BaseX.sol:129"
+          },
+          {
+            "contract": "BaseX",
+            "label": "PVT",
+            "type": "t_contract(IERC20)524",
+            "src": "../project:/contracts/BaseX.sol:130"
+          },
+          {
+            "contract": "BaseX",
+            "label": "NVT",
+            "type": "t_contract(IERC20)524",
+            "src": "../project:/contracts/BaseX.sol:131"
+          },
+          {
+            "contract": "BaseX",
+            "label": "klerosFactory",
+            "type": "t_contract(LightGTCRFactory)428",
+            "src": "../project:/contracts/BaseX.sol:138"
+          },
+          {
+            "contract": "BaseX",
+            "label": "klerosOrganisations",
+            "type": "t_contract(KlerosList)451",
+            "src": "../project:/contracts/BaseX.sol:139"
+          },
+          {
+            "contract": "BaseX",
+            "label": "organisations",
+            "type": "t_array(t_struct(Organisation)543_storage)dyn_storage",
+            "src": "../project:/contracts/BaseX.sol:148"
+          },
+          {
+            "contract": "BaseX",
+            "label": "organisationsLength",
+            "type": "t_uint256",
+            "src": "../project:/contracts/BaseX.sol:149"
+          },
+          {
+            "contract": "BaseX",
+            "label": "items",
+            "type": "t_array(t_struct(Item)558_storage)dyn_storage",
+            "src": "../project:/contracts/BaseX.sol:151"
+          },
+          {
+            "contract": "BaseX",
+            "label": "itemsLength",
+            "type": "t_uint256",
+            "src": "../project:/contracts/BaseX.sol:152"
+          },
+          {
+            "contract": "BaseX",
+            "label": "guidLookup",
+            "type": "t_mapping(t_string_memory_ptr,t_string_storage)",
+            "src": "../project:/contracts/BaseX.sol:154"
+          },
+          {
+            "contract": "BaseX",
+            "label": "orgGuidToIndex",
+            "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+            "src": "../project:/contracts/BaseX.sol:155"
+          },
+          {
+            "contract": "BaseX",
+            "label": "itemGuidToIndex",
+            "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+            "src": "../project:/contracts/BaseX.sol:156"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_contract(IERC20)524": {
+            "label": "contract IERC20"
+          },
+          "t_contract(LightGTCRFactory)428": {
+            "label": "contract LightGTCRFactory"
+          },
+          "t_contract(KlerosList)451": {
+            "label": "contract KlerosList"
+          },
+          "t_array(t_struct(Organisation)543_storage)dyn_storage": {
+            "label": "struct Organisation[]"
+          },
+          "t_struct(Organisation)543_storage": {
+            "label": "struct Organisation",
+            "members": [
+              {
+                "label": "orgGuid",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "name",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "JSONIPFS",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "klerosAddress",
+                "type": "t_address"
+              },
+              {
+                "label": "payoutWallet",
+                "type": "t_address"
+              },
+              {
+                "label": "PVT",
+                "type": "t_uint256"
+              },
+              {
+                "label": "NVT",
+                "type": "t_uint256"
+              },
+              {
+                "label": "PVThistorical",
+                "type": "t_uint256"
+              },
+              {
+                "label": "NVThistorical",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_struct(Item)558_storage)dyn_storage": {
+            "label": "struct Item[]"
+          },
+          "t_struct(Item)558_storage": {
+            "label": "struct Item",
+            "members": [
+              {
+                "label": "itemGuid",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "targetGuid",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "orgIndex",
+                "type": "t_uint256"
+              },
+              {
+                "label": "JSONIPFS",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "PVT",
+                "type": "t_uint256"
+              },
+              {
+                "label": "NVT",
+                "type": "t_uint256"
+              },
+              {
+                "label": "approvedToKlerosAndTokensMinted",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_string_memory_ptr,t_string_storage)": {
+            "label": "mapping(string => string)"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)"
+          }
+        }
+      }
+    }
+  }
+}
