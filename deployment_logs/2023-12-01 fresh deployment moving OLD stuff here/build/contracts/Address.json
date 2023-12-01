@@ -29,9 +29,9 @@
       "type": "error"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.23+commit.f704f362\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"target\",\"type\":\"address\"}],\"name\":\"AddressEmptyCode\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"AddressInsufficientBalance\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"FailedInnerCall\",\"type\":\"error\"}],\"devdoc\":{\"details\":\"Collection of functions related to the address type\",\"errors\":{\"AddressEmptyCode(address)\":[{\"details\":\"There's no code at `target` (it is not a contract).\"}],\"AddressInsufficientBalance(address)\":[{\"details\":\"The ETH balance of the account is not enough to perform the operation.\"}],\"FailedInnerCall()\":[{\"details\":\"A call to an address target failed. The target may have reverted.\"}]},\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Address.sol\":\"Address\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Address.sol\":{\"keccak256\":\"0x7296201b75517f4c4216e040ac83a2a96bcb3cd81d97c37f7857dec7a8c57623\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d6123312fec47e0106da3aa6129345e59ec227c842e83578f6ce090a30ac8252\",\"dweb:/ipfs/QmejWmR3KjaQax4hKMB9sfaHDygvVt79bDsWWhp86CeNWn\"]}},\"version\":1}",
-  "bytecode": "0x6055604b600b8282823980515f1a607314603f577f4e487b71000000000000000000000000000000000000000000000000000000005f525f60045260245ffd5b305f52607381538281f3fe730000000000000000000000000000000000000000301460806040525f80fdfea2646970667358221220add57178cc70049125ae2b9a991ef7ec619b777ef89e084533e9c8ef783f543e64736f6c63430008170033",
-  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040525f80fdfea2646970667358221220add57178cc70049125ae2b9a991ef7ec619b777ef89e084533e9c8ef783f543e64736f6c63430008170033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"target\",\"type\":\"address\"}],\"name\":\"AddressEmptyCode\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"AddressInsufficientBalance\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"FailedInnerCall\",\"type\":\"error\"}],\"devdoc\":{\"details\":\"Collection of functions related to the address type\",\"errors\":{\"AddressEmptyCode(address)\":[{\"details\":\"There's no code at `target` (it is not a contract).\"}],\"AddressInsufficientBalance(address)\":[{\"details\":\"The ETH balance of the account is not enough to perform the operation.\"}],\"FailedInnerCall()\":[{\"details\":\"A call to an address target failed. The target may have reverted.\"}]},\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Address.sol\":\"Address\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Address.sol\":{\"keccak256\":\"0x7296201b75517f4c4216e040ac83a2a96bcb3cd81d97c37f7857dec7a8c57623\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d6123312fec47e0106da3aa6129345e59ec227c842e83578f6ce090a30ac8252\",\"dweb:/ipfs/QmejWmR3KjaQax4hKMB9sfaHDygvVt79bDsWWhp86CeNWn\"]}},\"version\":1}",
+  "bytecode": "0x6055604b600b8282823980515f1a607314603f577f4e487b71000000000000000000000000000000000000000000000000000000005f525f60045260245ffd5b305f52607381538281f3fe730000000000000000000000000000000000000000301460806040525f80fdfea2646970667358221220c23476771314f9389876652ba0eb9fb645b05e5827fdaadf0a62ffa99b76fcbc64736f6c63430008150033",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040525f80fdfea2646970667358221220c23476771314f9389876652ba0eb9fb645b05e5827fdaadf0a62ffa99b76fcbc64736f6c63430008150033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
@@ -4849,11 +4849,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.8.23+commit.f704f362.Emscripten.clang"
+    "version": "0.8.21+commit.d9974bed.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.4.14",
-  "updatedAt": "2023-12-01T18:12:33.629Z",
+  "updatedAt": "2023-09-28T08:06:57.693Z",
   "devdoc": {
     "details": "Collection of functions related to the address type",
     "errors": {

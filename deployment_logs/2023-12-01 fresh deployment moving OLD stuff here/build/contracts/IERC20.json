@@ -1,72 +1,173 @@
 {
-  "contractName": "LightGTCRFactory",
+  "contractName": "IERC20",
   "abi": [
+    {
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
     {
       "inputs": [
         {
           "internalType": "address",
-          "name": "_arbitrator",
-          "type": "address"
-        },
-        {
-          "internalType": "bytes",
-          "name": "_arbitratorExtraData",
-          "type": "bytes"
-        },
-        {
-          "internalType": "address",
-          "name": "_connectedTCR",
-          "type": "address"
-        },
-        {
-          "internalType": "string",
-          "name": "_registrationMetaEvidence",
-          "type": "string"
-        },
-        {
-          "internalType": "string",
-          "name": "_clearingMetaEvidence",
-          "type": "string"
-        },
-        {
-          "internalType": "address",
-          "name": "_governor",
-          "type": "address"
-        },
-        {
-          "internalType": "uint256[4]",
-          "name": "_baseDeposits",
-          "type": "uint256[4]"
-        },
-        {
-          "internalType": "uint256",
-          "name": "_challengePeriodDuration",
-          "type": "uint256"
-        },
-        {
-          "internalType": "uint256[3]",
-          "name": "_stakeMultipliers",
-          "type": "uint256[3]"
-        },
-        {
-          "internalType": "address",
-          "name": "_relayContract",
+          "name": "account",
           "type": "address"
         }
       ],
-      "name": "deploy",
-      "outputs": [],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        }
+      ],
+      "name": "allowance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferFrom",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
       "stateMutability": "nonpayable",
       "type": "function"
     },
     {
       "inputs": [],
-      "name": "count",
+      "name": "name",
       "outputs": [
         {
-          "internalType": "uint256",
+          "internalType": "string",
           "name": "",
-          "type": "uint256"
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "symbol",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "decimals",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
         }
       ],
       "stateMutability": "view",
@@ -75,24 +176,23 @@
     {
       "inputs": [
         {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        },
+        {
           "internalType": "uint256",
-          "name": "_index",
+          "name": "num",
           "type": "uint256"
         }
       ],
-      "name": "instances",
-      "outputs": [
-        {
-          "internalType": "address",
-          "name": "",
-          "type": "address"
-        }
-      ],
-      "stateMutability": "view",
+      "name": "mint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.23+commit.f704f362\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"count\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_arbitrator\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"_arbitratorExtraData\",\"type\":\"bytes\"},{\"internalType\":\"address\",\"name\":\"_connectedTCR\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"_registrationMetaEvidence\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_clearingMetaEvidence\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"_governor\",\"type\":\"address\"},{\"internalType\":\"uint256[4]\",\"name\":\"_baseDeposits\",\"type\":\"uint256[4]\"},{\"internalType\":\"uint256\",\"name\":\"_challengePeriodDuration\",\"type\":\"uint256\"},{\"internalType\":\"uint256[3]\",\"name\":\"_stakeMultipliers\",\"type\":\"uint256[3]\"},{\"internalType\":\"address\",\"name\":\"_relayContract\",\"type\":\"address\"}],\"name\":\"deploy\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_index\",\"type\":\"uint256\"}],\"name\":\"instances\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/BaseX.sol\":\"LightGTCRFactory\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Address.sol\":{\"keccak256\":\"0x7296201b75517f4c4216e040ac83a2a96bcb3cd81d97c37f7857dec7a8c57623\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d6123312fec47e0106da3aa6129345e59ec227c842e83578f6ce090a30ac8252\",\"dweb:/ipfs/QmejWmR3KjaQax4hKMB9sfaHDygvVt79bDsWWhp86CeNWn\"]},\"project:/contracts/BaseX.sol\":{\"keccak256\":\"0x4f23b4da2541cf674022202ac149b9367fdaeeaadc0d60073a0d5ee94ec49bef\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6e77e548c9e37042d5ffed6c718d26bff5a761fb235fdb03cc6da64f019d85c3\",\"dweb:/ipfs/QmYqvrRPHJpncJHfgJrXcB33MNXDMT7HwMGzP8vwZoSK5f\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"num\",\"type\":\"uint256\"}],\"name\":\"mint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/BaseX.sol\":\"IERC20\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Address.sol\":{\"keccak256\":\"0x7296201b75517f4c4216e040ac83a2a96bcb3cd81d97c37f7857dec7a8c57623\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d6123312fec47e0106da3aa6129345e59ec227c842e83578f6ce090a30ac8252\",\"dweb:/ipfs/QmejWmR3KjaQax4hKMB9sfaHDygvVt79bDsWWhp86CeNWn\"]},\"project:/contracts/BaseX.sol\":{\"keccak256\":\"0x4f23b4da2541cf674022202ac149b9367fdaeeaadc0d60073a0d5ee94ec49bef\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6e77e548c9e37042d5ffed6c718d26bff5a761fb235fdb03cc6da64f019d85c3\",\"dweb:/ipfs/QmYqvrRPHJpncJHfgJrXcB33MNXDMT7HwMGzP8vwZoSK5f\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -11657,7 +11757,6 @@
                     "nodeType": "VariableDeclarationStatement",
                     "src": "12190:13:1"
                   },
-                  "isSimpleCounterLoop": true,
                   "loopExpression": {
                     "expression": {
                       "id": 1253,
@@ -11966,11 +12065,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.8.23+commit.f704f362.Emscripten.clang"
+    "version": "0.8.21+commit.d9974bed.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.4.14",
-  "updatedAt": "2023-12-01T18:12:33.646Z",
+  "updatedAt": "2023-09-28T08:06:57.706Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

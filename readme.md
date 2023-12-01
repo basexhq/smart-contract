@@ -55,13 +55,13 @@ https://wiki.basex.com
 
 LAUNCH CHECKLIST
 * 1. Deploy BaseX, following the instructions from: https://forum.openzeppelin.com/t/openzeppelin-upgrades-step-by-step-tutorial-for-truffle/3579 
-  * `npx truffle migrate --network goerli` _(need to delete previous build files)_
+  * `npx truffle migrate --network goerli` _(need to delete previous build files, or move to a sepate folder, see `deployment_logs`)_
   * `truffle run verify BaseX --network goerli` 
-* 2A. Deploy PVT NVT (passing address of BaseX to grant roles)
+* 2A. Deploy PVT NVT (passing address of BaseX to grant roles). This can happen via remix: `remixd -s . -u https://remix.ethereum.org/`
 * 2B. If already deployed - update the BaseX (the proxy) on these contracts to grant required roles
   * PVT: https://goerli.etherscan.io/address/0xee1b27c2d7edc390da423ea0f269825dc13184eb
   * NVT: https://goerli.etherscan.io/address/0x08418B63f49252fD4674C425AD7099a852BfE353
-  * Note that here using 0x85 address, not the MetaMask2 (which is the current deployer of other contracts)
+  * Note that at some point were using 0x85 address, not the MetaMask2 (which is the current deployer of other contracts)
 * 3. Set PVT NVT address at BaseX
 * 4. On the front-end update contract address and ABI
 * 5. On the back-end _(now we have Express backend)_ update contract address and ABI 
