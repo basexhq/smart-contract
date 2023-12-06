@@ -1,0 +1,90 @@
+m@mars-2 basex-smart-contract % npx truffle migrate --network goerli
+
+Compiling your contracts...
+===========================
+✓ Fetching solc version list from solc-bin. Attempt #1
+✓ Downloading compiler. Attempt #1.
+> Compiling ./contracts/Address.sol
+> Compiling ./contracts/BaseX.sol
+> Compiling ./contracts/PVTNVT.sol
+> Compiling ./contracts/UtilKeccakString.sol
+> Compiling ./contracts/UtilTestingDelegateCall.sol
+> Compilation warnings encountered:
+
+    Warning: Source file does not specify required compiler version! Consider adding "pragma solidity ^0.8.23;"
+--> project:/contracts/PVTNVT.sol
+
+,Warning: Return value of low-level calls not used.
+  --> project:/contracts/UtilTestingDelegateCall.sol:25:9:
+   |
+25 |         aAddress.delegatecall(abi.encodeWithSignature("setValue(uint256)", _value));
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+> Artifacts written to /Users/m/Kleros/basex-smart-contract/build/contracts
+> Compiled successfully using:
+   - solc: 0.8.23+commit.f704f362.Emscripten.clang
+
+
+Starting migrations...
+======================
+> Network name:    'goerli'
+> Network id:      5
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_deploy_upgradeable.js
+=======================
+
+   Deploying 'BaseX'
+   -----------------
+   > transaction hash:    0xf48704357416af0acc530328dcc951c80d83b994877b26d7d9014c5592deb1b5
+   > Blocks: 1            Seconds: 20
+   > contract address:    0xd00851435a6761E9105B8aFe3Db25BDd61Eb01cD
+   > block number:        10140123
+   > block timestamp:     1701454380
+   > account:             0x81e64EFA58bf79F1649F267E16451Fbf836071f6
+   > balance:             22.627761632913205105
+   > gas used:            4357919 (0x427f1f)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.08715838 ETH
+
+
+   Deploying 'ProxyAdmin'
+   ----------------------
+   > transaction hash:    0xcf0839bb1c1420c5412d7dac955eee987094bbb80837297f70e24b802a257b9c
+   > Blocks: 1            Seconds: 40
+   > contract address:    0x5dc22D5a1bdcdeB8B0560f042C15773aad6c20cD
+   > block number:        10140124
+   > block timestamp:     1701454428
+   > account:             0x81e64EFA58bf79F1649F267E16451Fbf836071f6
+   > balance:             22.618895852913205105
+   > gas used:            443289 (0x6c399)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00886578 ETH
+
+
+   Deploying 'TransparentUpgradeableProxy'
+   ---------------------------------------
+   > transaction hash:    0x9b3ac3d3418644270d4ecce8c3efab8a9e5de5474329a012f67d207731d13297
+   > Blocks: 1            Seconds: 16
+   > contract address:    0x6d2a3A662D192578fBE49411886F924cbbA20803
+   > block number:        10140125
+   > block timestamp:     1701454452
+   > account:             0x81e64EFA58bf79F1649F267E16451Fbf836071f6
+   > balance:             22.605312972913205105
+   > gas used:            679144 (0xa5ce8)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01358288 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.10960704 ETH
+
+Summary
+=======
+> Total deployments:   3
+> Final cost:          0.10960704 ETH
